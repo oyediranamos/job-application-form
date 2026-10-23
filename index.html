@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Job Application Form</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Job Application Form</h1>
+        <p>Please complete the form below to apply for a position.</p>
+    </header>
+
+    <main>
+
+        <form action="#" method="post" enctype="multipart/form-data">
+
+            <!-- Full Name -->
+            <div>
+                <label for="fullname">Full Name:</label>
+                <input
+                    type="text"
+                    id="fullname"
+                    name="fullname"
+                    placeholder="Enter your full name"
+                    autocomplete="name"
+                    required
+                    minlength="3"
+                >
+            </div>
+
+            <br>
+
+            <!-- Email -->
+            <div>
+                <label for="email">Email Address:</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="example@email.com"
+                    autocomplete="email"
+                    required
+                >
+            </div>
+
+            <br>
+
+            <!-- Phone Number -->
+            <div>
+                <label for="phone">Phone Number:</label>
+                <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="e.g. 08012345678"
+                    autocomplete="tel"
+                    pattern="[0-9+() -]{7,20}"
+                    title="Enter a valid phone number"
+                    required
+                >
+            </div>
+
+            <br>
+
+            <!-- Position -->
+            <div>
+                <label for="position">Position Applying For:</label>
+
+                <select id="position" name="position" required>
+                    <option value="">-- Select a Position --</option>
+                    <option value="frontend-developer">
+                        Frontend Developer
+                    </option>
+                    <option value="backend-developer">
+                        Backend Developer
+                    </option>
+                    <option value="ui-ux-designer">
+                        UI/UX Designer
+                    </option>
+                    <option value="software-engineer">
+                        Software Engineer
+                    </option>
+                    <option value="web-designer">
+                        Web Designer
+                    </option>
+                </select>
+            </div>
+
+            <br>
+
+            <!-- Start Date -->
+            <div>
+                <label for="startdate">Preferred Start Date:</label>
+
+                <input
+                    type="date"
+                    id="startdate"
+                    name="startdate"
+                    required
+                >
+            </div>
+
+            <br>
+
+            <!-- Cover Letter -->
+            <div>
+                <label for="coverletter">Cover Letter:</label>
+
+                <textarea
+                    id="coverletter"
+                    name="coverletter"
+                    rows="6"
+                    cols="40"
+                    placeholder="Tell us why you are suitable for this position..."
+                    minlength="20"
+                    required
+                ></textarea>
+            </div>
+
+            <br>
+
+            <!-- Resume Upload -->
+            <div>
+                <label for="resume">Upload Your Resume:</label>
+
+                <input
+                    type="file"
+                    id="resume"
+                    name="resume"
+                    accept=".pdf,.doc,.docx"
+                    required
+                >
+
+                <small>Accepted formats: PDF, DOC, DOCX.</small>
+            </div>
+
+            <br>
+
+            <!-- How Did You Hear About Us? -->
+            <fieldset>
+
+                <legend>How Did You Hear About Us?</legend>
+
+                <div>
+                    <input
+                        type="radio"
+                        id="socialmedia"
+                        name="source"
+                        value="social-media"
+                        required
+                    >
+
+                    <label for="socialmedia">Social Media</label>
+                </div>
+
+                <div>
+                    <input
+                        type="radio"
+                        id="website"
+                        name="source"
+                        value="website"
+                    >
+
+                    <label for="website">Company Website</label>
+                </div>
+
+                <div>
+                    <input
+                        type="radio"
+                        id="friend"
+                        name="source"
+                        value="friend"
+                    >
+
+                    <label for="friend">Friend or Referral</label>
+                </div>
+
+                <div>
+                    <input
+                        type="radio"
+                        id="jobboard"
+                        name="source"
+                        value="job-board"
+                    >
+
+                    <label for="jobboard">Job Board</label>
+                </div>
+
+                <div>
+                    <input
+                        type="radio"
+                        id="other"
+                        name="source"
+                        value="other"
+                    >
+
+                    <label for="other">Other</label>
